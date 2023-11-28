@@ -8,10 +8,10 @@ const Footer = () => {
 
 
 <ul style={{color:"white"}} >
-            {menuLinks.map((menu) =>{
+            {menuLinks.map((menu,index) =>{
 
            return (
-            <li>
+            <li key={index}>
                 <a href={menu.href}>{menu.text}</a>
             </li>
            )
@@ -25,7 +25,7 @@ const Footer = () => {
         {socialLinks.map((icon,index) =>{
 
             return(
-              <a key={index} href='#https://www.facebook.com/login/'><i class={`fa-brands ${icon.iconClass}`}></i>
+              <a key={index} href='#https://www.facebook.com/login/'><i className={`fa-brands ${icon.iconClass}`}></i>
               </a>  
             )
         })}

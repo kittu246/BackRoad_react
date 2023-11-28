@@ -13,7 +13,7 @@ const Services = () => {
             return (
             <div key={index} className='servicesCard'>
             <div className='serviceIcon'>
-            <i class={`fa-solid ${serviceCard.iconClass}`}></i>
+            <i className={`fa-solid ${serviceCard.iconClass}`}></i>
             </div>
             <div className='serviceInfor'>
             <h5>{serviceCard.heading}</h5>

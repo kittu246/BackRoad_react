@@ -24,7 +24,7 @@ const Tours = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.</p>
                     <div className='tourInfoSymbol'>
                         <div>
-                        <i class="fa-solid fa-bolt"></i>
+                        <i className="fa-solid fa-bolt"></i>
                             <p>{card.city}</p>
                         </div>
                         <p>{card.days}</p>

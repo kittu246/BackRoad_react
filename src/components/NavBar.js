@@ -12,10 +12,10 @@ function showMenuOptions(){
     <nav className='main'>
         <img src={logo} alt='roadmapLogo'/>
         <ul>
-            {menuLinks.map((menu) =>{
+            {menuLinks.map((menu,index) =>{
 
            return (
-            <li>
+            <li key={index} >
                 <a href={menu.href}>{menu.text}</a>
             </li>
            )
@@ -29,7 +29,7 @@ function showMenuOptions(){
         {socialLinks.map((icon,index) =>{
 
             return(
-              <a key={index} href='#https://www.facebook.com/login/'><i class={`fa-brands ${icon.iconClass}`}></i>
+              <a key={index} href='#https://www.facebook.com/login/'><i className={`fa-brands ${icon.iconClass}`}></i>
               </a>  
             )
         })}
@@ -39,7 +39,7 @@ function showMenuOptions(){
         </div>
 
         <div className='menubar' onClick={showMenuOptions}>
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
         </div>
 
 
