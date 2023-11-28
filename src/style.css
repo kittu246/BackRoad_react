@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section{
+  scroll-margin-top: 4rem;
+}
+
+/* main{
+    padding:500px 30px;
+} */
+
+nav {
+  display: flex;
+  padding: 20px 30px;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top:0;
+  left:0;
+  right:0;
+  background-color: white;
+  z-index: 1;
+}
+
+nav ul,.footer ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+}
+
+.menubar{
+  color: #07ccd3;
+  font-size: 24px;
+  display: none;
+}
+.footer ul a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.socialIcons i{
+  margin-left: 10px;
+  font-size: 20px;
+  color: #07ccd3;
+}
+.footerIcons i{
+
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+nav ul a:hover,.footer ul a:hover {
+  color: #3fd0d4;
+}
+
+.menuBar{
+
+  height:100%;
+  width:50vw;
+  background-color: white;
+  padding:20px;
+  position: fixed;
+  left:0;
+  top:0;
+  display: none;
+
+}
+
+.socialIcons i:hover ,.footerIcons i:hover{
+  color: #7fcdcf;
+}
+.heroSection {
+  background-image: url("./images/main.jpeg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+ 
+  /* padding-top: 30px;  */
+}
+.heroSection h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  /* margin-top: 1rem; */
+}
+.heroSection p {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+.heroSection button {
+  padding: 15px;
+  color: #07ccd3;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.heroSection button:hover {
+  color: #7fcdcf;
+  cursor: pointer;
+  transform: translate(-1px, -2px);
+  box-shadow: 0px 1px 2px 0px black;
+}
+
+.title{
+  margin :3rem 0rem;
+}
+
+.title h2 {
+  color: #102a42;
+  font-size: 40px;
+  text-align: center;
+}
+.title h2 span {
+  color: #07ccd3;
+}
+.about {
+  padding: 20px 30px;
+}
+
+.aboutMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 20px 50px;
+  margin: auto 0px;
+}
+
+.ImageSection {
+  flex: 0.6;
+  position: relative;
+}
+.ParaSection {
+  flex: 0.7;
+}
+
+.backBox {
+  height: 400px;
+  width: 500px;
+  border: 8px solid #07ccd3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aboutImage {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: -20px;
+  left: 40px;
+}
+.aboutImage img {
+  object-fit: contain;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.ParaSection {
+}
+
+.ParaSection h2 {
+  font-weight: 800;
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+.ParaSection p {
+  margin-bottom: 10px;
+  color: #6d87a0;
+}
+
+.ParaSection button {
+  padding: 5px 10px;
+  background-color: #07ccd3;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.serviceCardSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap:20px;
+}
+
+.sevicesSection {
+  margin-top: 10rem;
+
+  padding: 50px;
+  background-color: #f1f5f8;
+}
+.servicesCard {
+  display: flex;
+  gap: 10px;
+  width:400px;
+}
+.serviceIcon {
+  height: 75px;
+  width: 80px;
+  background-color: #2caeba;
+  color: #044e53;
+  display: flex;
+  font-size: 25px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceInfor p {
+  font-size: 14px;
+  color: #6d87a0;
+}
+.tourCardSections {
+  padding: 20px 50px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+.tourCard {
+  height: 380px;
+  width: 350px;
+
+  background-color: #f1f5f8;
+  border-radius: 10px;
+}
+.imgDiv{
+
+  height: 50%;
+  width: 100%;
+  position:relative;
+}
+.tourCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.dateDiv{
+  position :absolute;
+  bottom:0;
+  right:0;
+  background-color: #07ccd3;
+  color:white;
+  height:30px;
+  width:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tourInfor {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.tourInfor h5 {
+  font-size: 16px;
+}
+.tourInfor > p {
+  margin: 12px 0px;
+  color: #6d87a0;
+}
+.tourInfoSymbol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #07ccd3;
+}
+.tourInfoSymbol div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.tourCard:hover {
+  box-shadow: 0px 0px 10px 0px rgb(202, 201, 201);
+  transform: scale(1.01);
+}
+
+.footer{
+    padding: 5rem 1rem;
+    background-color: #102a42;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    text-align: center;
+}
+.footerIcons{
+    color: white;
+}
+
+@media screen and (max-width :767px) {
+
+
+  nav{
+    justify-content: space-between;
+  }
+
+  nav ul,.socialIcons i{
+   display: none;
+
+  }
+
+  .menubar{
+    display: block;
+  }
+  
+  
+  .ImageSection {
+   display: none;
+   
+  }
+  .ParaSection {
+    text-align:justify;
+    flex: 1;
+  }
+
+  
+}
