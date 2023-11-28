@@ -9,9 +9,9 @@ const Services = () => {
 
         <div className='serviceCardSection'>
         {servicesCardInfo.map(
-            (serviceCard) =>{
+            (serviceCard,index) =>{
             return (
-            <div className='servicesCard'>
+            <div key={index} className='servicesCard'>
             <div className='serviceIcon'>
             <i class={`fa-solid ${serviceCard.iconClass}`}></i>
             </div>

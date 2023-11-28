@@ -7,10 +7,10 @@ const MenuBar = () => {
 
 
     <ul>
-            {menuLinks.map((menu) =>{
+            {menuLinks.map((menu,index) =>{
 
            return (
-            <li>
+            <li key={index}>
                 <a href={menu.href}>{menu.text}</a>
             </li>
            )

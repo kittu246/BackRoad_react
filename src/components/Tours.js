@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import tour1 from '../images/tour-1.jpeg';
+
 import { toursCardInfo } from '../data';
 
 const Tours = () => {

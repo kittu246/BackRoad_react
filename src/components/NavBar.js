@@ -26,10 +26,10 @@ function showMenuOptions(){
         </ul>
 
         <div className='socialIcons'>
-        {socialLinks.map((icon) =>{
+        {socialLinks.map((icon,index) =>{
 
             return(
-              <a href='#'><i class={`fa-brands ${icon.iconClass}`}></i>
+              <a key={index} href='#https://www.facebook.com/login/'><i class={`fa-brands ${icon.iconClass}`}></i>
               </a>  
             )
         })}

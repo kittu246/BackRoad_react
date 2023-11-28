@@ -22,10 +22,10 @@ const Footer = () => {
         </ul>
 
         <div className='footerIcons'>
-        {socialLinks.map((icon) =>{
+        {socialLinks.map((icon,index) =>{
 
             return(
-              <a href='#facebook.com'><i class={`fa-brands ${icon.iconClass}`}></i>
+              <a key={index} href='#https://www.facebook.com/login/'><i class={`fa-brands ${icon.iconClass}`}></i>
               </a>  
             )
         })}
