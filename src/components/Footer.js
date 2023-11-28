@@ -25,7 +25,7 @@ const Footer = () => {
         {socialLinks.map((icon) =>{
 
             return(
-              <a href='#'><i class={`fa-brands ${icon.iconClass}`}></i>
+              <a href='#facebook.com'><i class={`fa-brands ${icon.iconClass}`}></i>
               </a>  
             )
         })}

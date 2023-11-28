@@ -10,9 +10,9 @@ const Tours = () => {
 
         <div className='tourCardSections'>
 
-            {toursCardInfo.map((card) =>{
+            {toursCardInfo.map((card,index) =>{
                 return (
-<div className='tourCard'>
+<div key={index} className='tourCard'>
     <div className='imgDiv'>
                 <img src={card.image} alt='cardImage'/>
                 <div className='dateDiv'>
